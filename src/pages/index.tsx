@@ -24,7 +24,7 @@ export default function Home({ results }: IData) {
     <>
     <GitHubCorner projectUrl="https://github.com/danielalvescwb/next-marvel"/>
       <HeroBanner />
-      <SimpleGrid minChildWidth={400} spacing={4} p={5}>
+      <SimpleGrid minChildWidth={{base: '300px', md: '400px', lg: '400px'}} spacing={4} p={5}>
         {results.map(
           (
             {

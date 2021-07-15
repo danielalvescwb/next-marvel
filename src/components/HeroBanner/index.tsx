@@ -57,7 +57,7 @@ const HeroBanner: React.FC = () => {
           <Box
             position="absolute"
             right={{ base: '0px', md: '-20px', lg: '-130px' }}
-            bottom="0"
+            bottom={{ base: '50px', md: '0px', lg: '0px' }}
             w={{ base: '100px', md: '200px', lg: '200px' }}
             h={{ base: '50px', md: '100px', lg: '100px' }}
           >
