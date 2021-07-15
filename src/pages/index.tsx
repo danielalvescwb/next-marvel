@@ -22,7 +22,7 @@ interface IItems {
 export default function Home({ results }: IData) {
   return (
     <>
-    <GitHubCorner projectUrl="https://github.com/danielalvescwb"/>
+    <GitHubCorner projectUrl="https://github.com/danielalvescwb/next-marvel"/>
       <HeroBanner />
       <SimpleGrid minChildWidth={400} spacing={4} p={5}>
         {results.map(
