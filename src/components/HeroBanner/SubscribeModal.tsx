@@ -31,7 +31,7 @@ export function SubscribeModal(): JSX.Element {
     const { email } = data
     localStorage.setItem('@marvel-next:email', email)
     const sendSubscribe = await axios.post(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/api/handleSubscriptioin`,
+      `./api/handleSubscriptioin`,
       {
         email,
       },
