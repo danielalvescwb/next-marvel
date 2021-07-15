@@ -1,0 +1,50 @@
+.tag {
+  filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 1));
+}
+.img-tag > div {
+  display: contents !important;
+}
+.img-tag > div > img {
+  transform: rotate(-6deg);
+  padding: 5px !important;
+}
+
+.githubCorner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .githubCorner:hover .octo-arm {
+    animation: none;
+  }
+  .githubCorner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #171923;
+}
+::-webkit-scrollbar-thumb {
+  background: #C53030;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9B2C2C;
+}
