@@ -76,7 +76,6 @@ export default function Home({ results }: IData) {
                   pb={3}
                   pl={3}
                   bgColor="gray.800"
-                  minH="100%"
                   opacity="0.7"
                 >
                   <Box
