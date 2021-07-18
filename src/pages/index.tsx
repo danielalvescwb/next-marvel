@@ -5,6 +5,7 @@ import { Box, Badge, Button, Center, Grid, SimpleGrid } from '@chakra-ui/react'
 
 import { HeroBanner } from '../components/HeroBanner'
 import { GitHubCorner } from '../components/GitHubCorner'
+import { SEO } from '../components/SEO'
 
 interface IData {
   results: IItems[]
@@ -20,11 +21,23 @@ interface IItems {
 }
 
 export default function Home({ results }: IData) {
+  const title = 'Home'
+  const description = 'Keep track of the last hundred trade comic paperback releases from Marvel'
   return (
     <>
-    <GitHubCorner projectUrl="https://github.com/danielalvescwb/next-marvel"/>
+      <SEO
+        title={title}
+        description={description}
+        shoudExcludeTitleSuffix
+        image="bg_share.jpg"
+      />
+      <GitHubCorner projectUrl="https://github.com/danielalvescwb/next-marvel" />
       <HeroBanner />
-      <SimpleGrid minChildWidth={{base: '300px', md: '400px', lg: '400px'}} spacing={4} p={5}>
+      <SimpleGrid
+        minChildWidth={{ base: '300px', md: '400px', lg: '400px' }}
+        spacing={4}
+        p={5}
+      >
         {results.map(
           (
             {
@@ -71,13 +84,7 @@ export default function Home({ results }: IData) {
                   />
                 </Center>
 
-                <Box
-                  pr={3}
-                  pb={3}
-                  pl={3}
-                  bgColor="gray.800"
-                  opacity="0.7"
-                >
+                <Box pr={3} pb={3} pl={3} bgColor="gray.800" opacity="0.7">
                   <Box
                     mt="4"
                     fontWeight="semibold"
