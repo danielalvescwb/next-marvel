@@ -21,15 +21,14 @@ interface IItems {
 }
 
 export default function Home({ results }: IData) {
-  const title = 'Home'
+  const title = 'Comic home'
   const description = 'Keep track of the last hundred trade comic paperback releases from Marvel'
   return (
     <>
       <SEO
         title={title}
         description={description}
-        shoudExcludeTitleSuffix
-        image="bg_share.jpg"
+        image="./bg_share.jpg"
       />
       <GitHubCorner projectUrl="https://github.com/danielalvescwb/next-marvel" />
       <HeroBanner />
